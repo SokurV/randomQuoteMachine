@@ -5,7 +5,6 @@ const BTN_TWEET = document.querySelector('#tweet-quote')
 const APP_WRAPPER = document.querySelector('.app-wrapper')
 const COLORS = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"]
 
-
 async function updateQuote() {
     // Fetch a random quote from the Quotable API
     const response = await fetch("https://api.quotable.io/random");
