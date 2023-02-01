@@ -22,9 +22,9 @@ a {
 
 .quote-box {
     padding: 20px;
-    min-width: 350px;
-    max-width: 600px;
+    width: 600px;
     min-height: 200px;
+    margin: 15px;
 }
 
 .quote-box_style {
@@ -42,10 +42,10 @@ a {
     transition: 600ms;
 }
 
-
 .quote-text_style::before {
     content: "\"";
     font-size: 32px;
+    transition: 600ms;
 }
 
 .quote-author_style {
@@ -97,4 +97,11 @@ a {
 .button_style:hover {
     background-color: black;
     color: beige;
+}
+
+@media (max-width: 630px) {
+    .quote-box {
+        min-width: 330px;
+        max-width: 600px;
+    }
 }
